@@ -1,0 +1,317 @@
+<!-- déclaration de l'usage de la norme HTML5 -->
+<!DOCTYPE html>
+<!-- déclaration de la langue du document à l'usage des lecteurs pour a11i -->
+<html lang="fr">
+
+<head>
+
+  <!-- Ne pas indexer la page d'accueil -->
+  <meta name="robots" content="noindex">
+
+  <!-- déclaration de l'usage de l'encodage utf-8 -->
+  <meta charset="utf-8" />
+
+  <!-- déclaration de l'intention pour le RWD de s'adapter au dispositif, à partir du niveau de zoom 1:1, sans réduction du contenu à la largeur du dispositif -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- titre du document, utilisé pour les résultats de recherche et pour l'onglet du naviguateur -->
+  <title>Louis Labatut</title>
+
+  <!-- description courte (< 160 chars) du contenus du document pour les moteurs de recherches et le réf. -->
+  <meta name="description" content="" />
+
+  <!-- reboot CSS by Bootstrap  -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap-reboot.min.css" />
+
+
+  <!-- font Google  -->
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Vollkorn&display=swap" rel="stylesheet" />
+
+  <!-- feuille de CSS personnalisée -->
+  <link rel="stylesheet" href="./assets/style.css" />
+  <link rel="stylesheet" href="./assets/styles.css" />
+
+  <!-- Importation JQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+  <!-- Mise en forme spécifique affichage projets -->
+  <style>
+    :root {
+      /* seulement en px  */
+      --msnry-gutter: 1rem;
+
+      --msnry-width: 100%;
+      --msnry-height: auto;
+    }
+
+    .grid .grid-item,
+    .grid .grid-sizer {
+      width: calc(var(--msnry-width) - var(--msnry-gutter));
+    }
+
+    .gutter-sizer {
+      width: var(--msnry-gutter);
+    }
+
+    @media screen and (min-width: 800px) {
+
+      .grid .grid-item,
+      .grid .grid-sizer {
+        width: 100%;
+      }
+    }
+
+    @media screen and (min-width: 480px) {
+
+      .grid .grid-item,
+      .grid .grid-sizer {
+        width: calc((var(--msnry-width) - (var(--msnry-gutter) * 1)) / 2);
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+
+      .grid .grid-item,
+      .grid .grid-sizer {
+        width: calc((var(--msnry-width) - (var(--msnry-gutter) * 2)) / 3);
+      }
+    }
+
+    @media screen and (min-width: 1366px) {
+
+      .grid .grid-item,
+      .grid .grid-sizer {
+        width: calc((var(--msnry-width) - (var(--msnry-gutter) * 3)) / 4);
+      }
+    }
+
+    @media screen and (min-width: 1500px) {
+
+      .grid .grid-item,
+      .grid .grid-sizer {
+        width: calc((var(--msnry-width) - (var(--msnry-gutter) * 4)) / 5);
+      }
+    }
+
+    .grid .grid-item {
+      display: block;
+      float: left;
+      min-height: var(--msnry-height);
+      margin-bottom: var(--msnry-gutter);
+    }
+
+    .grid .grid-item--width2 {
+      width: 200px;
+    }
+
+    .grid .grid-item--height2 {
+      height: 200px;
+    }
+
+    /* clear fix */
+    .grid:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  </style>
+</head>
+
+
+<!--  <body class="travaux" > -->
+
+<body class="travaux">
+
+  <div id="chargement-background">
+    <div class="center">
+      <img id="loader" src="./assets/img/banana.png" />
+      <p id="titrechargement">chargement</p>
+    </div>
+  </div>
+
+
+  <!-- NAVIGATION  -->
+  <!-- MENU MOBILE  -->
+  <div class="menu-open">
+    <div class="barre-mobile">
+      <div class="logo_mobile"><a href="./index.html"><img src="./assets/img/louis_labatut_logotype.png"
+            alt="Louis LABATUT" /></a></div>
+      <div class="burger-button" class="boutton">
+        <img src="./assets/svg/burger.svg" alt="icone menu burger" width="80px">
+      </div>
+      <div class="burger-close" class="boutton" style="display: none;">
+        <img src="./assets/svg/cross.svg" alt="icone menu burger" width="80px">
+      </div>
+    </div>
+    <div class="mobile-navmenu">
+      <nav>
+        <ul>
+          <li><div class="boutton__clicked">travaux</div></li>
+          <li><a href="./a_propos.html" class="boutton">à propos</a></li>
+          <li><a href="./contact.php" class="boutton">contact</a></li>
+          <li><a href="#" class="boutton">recherche</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!-- MENU DESKTOP  -->
+  <header>
+    <figure class="brand">
+      <a href="./index.html" class="boutton"><img src="./assets/img/louis_labatut_logotype.png"
+          alt="Louis LABATUT" /></a>
+    </figure>
+    <nav>
+      <ul>
+        <li>
+          <div class="boutton__clicked">travaux</div>
+        </li>
+        <li><a href="./a_propos.html" class="boutton">à propos</a></li>
+        <li><a href="./contact.php" class="boutton">contact</a></li>
+        <li><a href="#" class="boutton">recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- / NAVIGATION  -->
+
+  <!-- CONTENUS PRINCIPAL -->
+  <main>
+
+    <div class="grid-header">
+      <!-- composant "window" -->
+      <div class="window">
+        <div class="window__body window__body--title">
+          <h1>travaux</h1>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="button-group filters-button-group">
+      <button class="button is-checked" data-filter="*">tout</button>
+      <button class="button" data-filter=".webdesign">webdesign</button>
+      <button class="button" data-filter=".developpement">développement</button>
+      <button class="button" data-filter=".graphisme">graphisme</button>
+      <button class="button" data-filter=".illustration">illustration</button>
+    </div>
+
+    <div class="grid">
+      <!-- uniquement utile pour paramétrer masonry  -->
+      <!-- ne pas supprimer ! -->
+      <div class="grid-sizer"></div>
+      <div class="gutter-sizer"></div>
+      <!-- ne pas supprimer ! -->
+
+      <a href=".\projets\aquiltour.html" class="grid-item graphisme">
+        <div class="thumbnail">
+          <img src=".\assets\projets\aquiltour\cover.png" alt="affiche aquiltour" />
+          <div class="dimension overlay"></div>
+        </div>
+        <h3 class="name">aquiltour</h3>
+      </a>
+
+      <a href=".\projets\pop.html" class="grid-item illustration">
+        <div class="thumbnail">
+          <img src=".\assets\projets\illustrations\pop.png" alt="affiche aquiltour" />
+          <div class="dimension overlay"></div>
+        </div>
+        <h3 class="name">pop</h3>
+      </a>
+
+      <a href=".\projets\cn_watch.html" class="grid-item graphisme webdesign developpement">
+        <div class="thumbnail">
+          <img src=".\assets\projets\cnwatch\cnwatch.png" alt="cartoon network watch" />
+          <div class="dimension overlay"></div>
+        </div>
+        <h3 class="name">Cartoon Network WATCH</h3>
+      </a>
+
+      <a href=".\projets\stickers.html" class="grid-item graphisme illustration">
+        <div class="thumbnail">
+          <img src=".\assets\projets\stickers\stickers.gif" alt="stickers personnalisés" />
+          <div class="dimension overlay"></div>
+        </div>
+        <h3 class="name">stickers maison</h3>
+      </a>
+    </div>
+  </main>
+  <!-- / CONTENUS PRINCIPAL -->
+
+  <!-- PIED DE PAGE  -->
+  <footer>
+    <nav>
+      <ul>
+        <li><a class="boutton" href="./mentions_legales.html">mentions légales</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <!-- / PIED DE PAGE  -->
+
+  <!-- JQUERY PRELOADER  -->
+  <script>
+    $(document).ready(function () {
+      $(window).load(function () {
+        function Preloader() {
+          var preloader = $('#chargement-background');
+          preloader.delay(3000).fadeOut(1000);
+        }
+        if (!sessionStorage.getItem('doNotShow')) {
+          sessionStorage.setItem('doNotShow', true);
+          Preloader();
+        } else {
+          $('#chargement-background').hide();
+        }
+      });
+    });
+  </script>
+
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script>
+    // external js: isotope.pkgd.js
+
+    // init Isotope
+    var iso = new Isotope(".grid", {
+      itemSelector: ".grid-item",
+      percentPosition: true,
+      masonry: {
+        columnWidth: ".grid-sizer",
+        gutter: ".gutter-sizer",
+      },
+    });
+
+    // bind filter button click
+    var filtersElem = document.querySelector(".filters-button-group");
+    filtersElem.addEventListener("click", function (event) {
+      // only work with buttons
+      if (!matchesSelector(event.target, "button")) {
+        return;
+      }
+      var filterValue = event.target.getAttribute("data-filter");
+      // use matching filter function
+      iso.arrange({
+        filter: filterValue
+      });
+    });
+
+    // change is-checked class on buttons
+    var buttonGroups = document.querySelectorAll(".button-group");
+    for (var i = 0, len = buttonGroups.length; i < len; i++) {
+      var buttonGroup = buttonGroups[i];
+      radioButtonGroup(buttonGroup);
+    }
+
+    function radioButtonGroup(buttonGroup) {
+      buttonGroup.addEventListener("click", function (event) {
+        // only work with buttons
+        if (!matchesSelector(event.target, "button")) {
+          return;
+        }
+        buttonGroup.querySelector(".is-checked").classList.remove("is-checked");
+        event.target.classList.add("is-checked");
+      });
+    }
+  </script>
+  <script src="./main.js"></script>
+</body>
+
+</html>

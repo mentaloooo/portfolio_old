@@ -1,0 +1,180 @@
+<!-- déclaration de l'usage de la norme HTML5 -->
+<!DOCTYPE html>
+<!-- déclaration de la langue du document à l'usage des lecteurs pour a11i -->
+<html lang="fr">
+
+<head>
+  <!-- déclaration de l'usage de l'encodage utf-8 -->
+  <meta charset="utf-8" />
+
+  <!-- déclaration de l'intention pour le RWD de s'adapter au dispositif, à partir du niveau de zoom 1:1, sans réduction du contenu à la largeur du dispositif -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- titre du document, utilisé pour les résultats de recherche et pour l'onglet du naviguateur -->
+  <title>Louis Labatut</title>
+
+  <!-- description courte (< 160 chars) du contenus du document pour les moteurs de recherches et le réf. -->
+  <meta name="description" content="" />
+
+  <!-- reboot CSS by Bootstrap  -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap-reboot.min.css" />
+
+  <!-- font Google  -->
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Vollkorn&display=swap" rel="stylesheet" />
+
+  <!-- feuille de CSS personnalisée -->
+  <link rel="stylesheet" href="./assets/style.css" />
+  <link rel="stylesheet" href="./assets/styles.css" />
+</head>
+
+<body class="a_propos">
+
+  <!-- NAVIGATION  -->
+  <!-- MENU MOBILE  -->
+  <div class="menu-open">
+    <div class="barre-mobile">
+      <div class="logo_mobile"><a href="./index.html"><img src="./assets/img/louis_labatut_logotype.png"
+            alt="Louis LABATUT" /></a></div>
+      <div class="burger-button" class="boutton">
+        <img src="./assets/svg/burger.svg" alt="icone menu burger" width="80px">
+      </div>
+      <div class="burger-close" class="boutton" style="display: none;">
+        <img src="./assets/svg/cross.svg" alt="icone menu burger" width="80px">
+      </div>
+    </div>
+    <div class="mobile-navmenu">
+      <nav>
+        <ul>
+          <li><a href="./index.html" class="boutton">travaux</a></li>
+          <li><div class="boutton__clicked">à propos</div></li>
+          <li><a href="./contact.php" class="boutton">contact</a></li>
+          <li><a href="#" class="boutton">recherche</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!-- MENU DESKTOP  -->
+  <header>
+    <figure class="brand">
+      <a href="./index.html" class="boutton"><img src="./assets/img/louis_labatut_logotype.png"
+          alt="Louis LABATUT" /></a>
+    </figure>
+    <nav>
+      <ul>
+        <li><a href="./index.html" class="boutton">travaux</a></li>
+        <li><div class="boutton__clicked">à propos</div></li>
+        <li><a href="./contact.php" class="boutton">contact</a></li>
+        <li><a href="#" class="boutton">recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- / NAVIGATION  -->
+
+
+
+  <!-- CONTENUS PRINCIPAL -->
+  <main>
+    <!-- Contenu de page -->
+
+
+    <!-- Debut grid -->
+    <div class="grid-apropos">
+
+      <div class="grid-header">
+        <!-- composant "window" -->
+        <div class="window">
+          <div class="window__body window__body--title">
+            <h1>à propos</h1>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Photo -->
+      <!-- composant "window" -->
+      <div class="window">
+        <div class="window__header">
+          <h2 class="window__title">photo.png</h2>
+          <div class="window__toogle">X</div>
+        </div>
+        <div class="image">
+          <img src=".\assets\img\1louis.png" ;>
+        </div>
+      </div>
+
+
+      <!-- Photo -->
+
+
+      <div class="window">
+        <div class="window__header">
+          <h2 class="window__title">infos.txt</h2>
+          <div class="window__toogle">X</div>
+        </div>
+        <div class="window__body">
+          <ul>
+            <li>
+              <p>Étudiant en webdesign</p>
+            </li>
+            <li>
+              <p>20 ans, France</p>
+            </li>
+            <li>
+              <p></p>Graphisme, Illustration, Web</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+
+      <div class="centres-dinterets">
+        <div class="window">
+          <div class="window__header">
+            <h2 class="window__title">centres d'intérets.txt</h2>
+            <div class="window__toogle">X</div>
+          </div>
+          <div class="window__body">
+            <p>- Illustration</p>
+            <p>- Graphisme</p>
+            <p>- Game Design</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Texte présentation -->
+      <div class="presentation">
+        <div class="window">
+          <div class="window__header">
+            <h2 class="window__title">présentation.txt</h2>
+            <div class="window__toogle">X</div>
+          </div>
+          <div class="window__body">
+            Bonjour, moi c'est Louis, j'habite à Bergerac et j'étudie le Web Design à l'école "La WAB". Dans mon temps
+            libre j'aime dessiner, créer, expériementer et découvrir de nouveau outils et manières de créer des choses.
+            J'aime le travail d'équipe et le partage d'expérience.
+          </div>
+        </div>
+      </div>
+
+      <a href="./contact.php"><button class="boutton button--solo">me contacter</button></a>
+
+
+    </div> <!-- Fin du grid -->
+  </main>
+  <!-- / CONTENUS PRINCIPAL -->
+
+  <!-- PIED DE PAGE  -->
+  <footer>
+    <nav>
+      <ul>
+        <li><a class="boutton" href="./mentions_legales.html" style="margin:0px;">mentions légales</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <!-- / PIED DE PAGE  -->
+  <script src="./main.js"></script>
+</body>
+
+</html>
